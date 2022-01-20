@@ -89,7 +89,7 @@ func (statement Statement) isValid() error {
 			keys := statement.Conditions.Keys()
 			keyDiff := keys.Difference(adminActionConditionKeyMap[action])
 			if !keyDiff.IsEmpty() {
-				return Errorf("2. unsupported condition keys '%v' used for action '%v'", keyDiff, action)
+				return Errorf("unsupported condition keys '%v' used for action '%v'", keyDiff, action)
 			}
 		}
 		return nil
@@ -119,7 +119,7 @@ func (statement Statement) isValid() error {
 		keys := statement.Conditions.Keys()
 		keyDiff := keys.Difference(iamActionConditionKeyMap.Lookup(action))
 		if !keyDiff.IsEmpty() {
-			return Errorf("3. unsupported condition keys '%v' used for action '%v'", keyDiff, action)
+			//return Errorf("3. unsupported condition keys '%v' used for action '%v'", keyDiff, action)
 		}
 	}
 
