@@ -107,7 +107,7 @@ func parseKey(s string) (Key, error) {
 		return key, nil
 	}
 
-	return key, fmt.Errorf("invalid condition key !!! > '%v'", s)
+	return key, fmt.Errorf("invalid condition key !!! Et mon vié !  > '%v'", s)
 }
 
 // NewKey - creates new key
