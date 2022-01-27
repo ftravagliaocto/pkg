@@ -270,6 +270,7 @@ var CommonKeys = append([]KeyName{
 	AWSUsername,
 	LDAPUser,
 	LDAPUsername,
+	ExistingObjectTag,
 }, JWTKeys...)
 
 // AllSupportedAdminKeys - is list of all admin supported keys.
